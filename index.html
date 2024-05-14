@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <main>
+
+        <div class="bill-input">
+            <p>Bill</p>
+            <div class="input-container">  
+                <input id="bill-amount" type="number"/>
+            </div>
+
+            <p>Percentage tip</p>
+            <div id="tip-container">  
+                <div class="tip">5%</div>
+                <div class="tip">10%</div>
+                <div class="tip">15%</div>
+                <div class="tip">25%</div>
+                <div class="tip">50%</div>
+                <div class="tip">75%</div> 
+            </div>
+            <input type="number" placeholder="Enter tip in percentage" class="custom-tip gray-input" >
+            <p>Number of pepole</p>
+            <input type="number" placeholder="Custom tip in percentage" class="number-of-people gray-input">
+         
+
+            <button class="generate-bill-btn " >Generate Bill</button>
+        </div>
+
+
+        <div class="bill-output" >
+             <p>Tip Amount <span class="tip-amount"></span></p>
+             <p >Total <span class="total"></span></p>
+             <p class="">Each Person Bill <span class="each-person-bill"></span></p>
+             <button class="reset-btn" disabled>Reset</button>
+            </div>
+         
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
